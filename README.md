@@ -1,6 +1,4 @@
-# MiniMart - Client-Side E-Commerce Site
-
-## Overview
+# MiniMart
 This is a simple client-side e-commerce application built using vanilla HTML, CSS, and JavaScript. It simulates an online store with product listing, favorites, cart, and checkout functionality, using data from a dummy API. 
 
 ## Features
