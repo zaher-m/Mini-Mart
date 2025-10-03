@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniMart - Checkout</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/checkout.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="desktop-nav">
+            <div class="logo-container">
+                <a href="index.html"><span class="logo-text">MINIMART</span></a>
+            </div>
+            <div class="nav-items">
+                <ul>
+                    <a href="index.html">Products</a>
+                    <a href="#">About</a>
+                    <a href="favorites.html">Favorites</a>
+                </ul>
+            </div>
+            <div class="nav-controls">
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Search products...">
+                </div>
+                <div class="fav-icons">
+                    <a href="favorites.html" class="icon-fav"> 💔</a>
+                </div>
+                <div class="cart-icons">
+                    <a href="cart.html" class="icon-cart">🛒</a>
+                    <span class="cart-badge hidden" id="cart-badge">0</span>
+                </div>
+                <span class="icon-hamburger">☰</span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="checkout-container">
+        <div class="checkout-header">
+            <h1>Checkout</h1>
+            <p class="checkout-subtitle">Review your order to complete your purchase</p>
+        </div>
+
+        <div class="checkout-content">
+            <div class="order-summary">
+                <h2>Order Summary</h2>
+                <div id="summary-items"></div>
+                <div class="summary-totals">
+                    <div class="summary-row summary-total">
+                        <span>Total:</span>
+                        <span id="summary-total-price">$0.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <form id="checkout-form">
+                <h2>Billing Information</h2>
+
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" placeholder="Enter your email address" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Shipping Address *</label>
+                    <textarea id="address" placeholder="Enter your complete shipping address" rows="3"
+                        required></textarea>
+                </div>
+
+                <div class="form-actions">
+                    <button type="button" class="back-to-cart" onclick="window.location.href='cart.html'">Back to
+                        Cart</button>
+                    <button type="submit" class="place-order-btn">Place Order</button>
+                </div>
+            </form>
+        </div>
+
+        <div id="success-modal" class="modal hidden">
+            <div class="modal-content">
+                <div class="success-icon">✓</div>
+                <h2>Order Placed Successfully!</h2>
+                <p>Thank you for your purchase. Your order has been confirmed and will be processed shortly.</p>
+                <div class="order-details">
+                    <p><strong>Order Number:</strong> <span id="order-number"></span></p>
+                    <p><strong>Total:</strong> <span id="order-total"></span></p>
+                </div>
+                <div class="modal-actions">
+                    <button id="continue-shopping" class="continue-btn">Continue Shopping</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <nav class="menu hidden">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="favorites.html">Favorites</a></li>
+            <li><a href="cart.html">Cart</a></li>
+        </ul>
+    </nav>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+                <a href="#">Terms of Service</a>
+            </div>
+            <p class="footer-text">&copy; 2025 MiniMart. All rights reserved | Your Best Online Shop</p>
+        </div>
+    </footer>
+
+    <script src="js/utils.js"></script>
+    <script src="js/checkout.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniMart</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="desktop-nav">
+            <div class="logo-container">
+                <a href="index.html"><span class="logo-text">MINIMART</span></a>
+            </div>
+            <div class="nav-items">
+                <ul>
+                    <a href="index.html">Products</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                </ul>
+            </div>
+            <div class="nav-controls">
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Search products...">
+                </div>
+                <div class="fav-icons">
+                    <a href="favorites.html" class="icon-fav"> 💔</a>
+                </div>
+                <div class="cart-icons">
+                    <a href="cart.html" class="icon-cart">🛒</a>
+                    <span class="cart-badge hidden" id="cart-badge">0</span>
+                </div>
+                <span class="icon-hamburger">☰</span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Welcome to MiniMart</h2>
+            <p>Your best Online Shop</p>
+            <button class="shop-now-btn">Explore Products</button>
+        </div>
+    </section>
+
+    <section class="new-arrivals">
+        <p class="intro-paragraph">Explore our collection of quality products across various categories. Find
+            everything you need in one place.</p>
+
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-category="all">All Products</button>
+        </div>
+
+        <div class="products-grid"></div>
+
+    </section>
+
+    <nav class="menu hidden">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="favorites.html">Favorites</a></li>
+            <li><a href="cart.html">Cart</a></li>
+        </ul>
+    </nav>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+            <p class="footer-text">&copy; 2025 MiniMart. All rights reserved. | Your Best Online Shop</p>
+        </div>
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/products.js"></script>
+</body>
+
+</html>
